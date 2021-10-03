@@ -13,6 +13,6 @@ public class Camera
 
     public Ray createCameraRay(Vec2 uv)
     {
-        return new Ray(new Vec3(0, 0, -5), Vec3.normalize(new Vec3(uv.x, uv.y, 1)));
+        return new Ray(this.pos, Vec3.normalize(new Vec3(uv.x, uv.y, 1)));
     }
 }
